@@ -18,9 +18,9 @@ public class conexaomysql {
 			conexao = 
 			DriverManager
 			.getConnection(
-			"jdbc:mysql://192.168.3.112/banco",
-			"java",
-			"123456");
+			"jdbc:mysql://br234.hostgator.com.br:3306/somde078_android",
+			"somde078_android",
+			"12345");
 
 		}catch (Exception e){
 			System.out.println("Erro: " + e.getMessage());

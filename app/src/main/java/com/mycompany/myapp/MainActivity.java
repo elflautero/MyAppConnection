@@ -18,7 +18,12 @@ public class MainActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-		
+	/*
+		AlunosDao aluDao = new AlunosDao();
+	
+		aluDao.listarAlunos();*/
+	
+		System.out.println("conectou");
 	
 	}
 
