@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.PreparedStatement;
 import java.util.*;
+import android.widget.*;
 
 public class MainActivity extends Activity 
 {
@@ -18,13 +19,40 @@ public class MainActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-	/*
-		AlunosDao aluDao = new AlunosDao();
+
+
+		/*
+		try {
+		
+			AlunoDao aluDao = new AlunoDao();
+
+			List<Aluno> list =
+				aluDao.listarAlunos();
 	
-		aluDao.listarAlunos();*/
+		} catch (Exception e) {
+			Toast.makeText(
+				this,
+				e.toString(),
+				Toast.LENGTH_LONG).show();
+		}*/
 	
-		System.out.println("conectou");
+	Aluno a = new Aluno();
 	
+	a.setNome("Jorge - Flor e Ser");
+		
+	AlunoDao aDao = new AlunoDao();
+
+	try {
+		
+	aDao.salvarAluno(a);
+
+	} catch (Exception e) {
+		Toast.makeText(
+			this,
+			e.toString(),
+			Toast.LENGTH_LONG).show();
+	
+	}
 	}
 
 }

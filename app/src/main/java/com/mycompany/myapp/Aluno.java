@@ -5,14 +5,14 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.PreparedStatement;
 
-public class Alunos {
+public class Aluno {
 
 
 	int id;
 	String nome;
 
 	public int  getID (){
-	
+
 		return id;
 	}
 
@@ -34,5 +34,5 @@ public class Alunos {
 
 	}
 
-	
+
 }
